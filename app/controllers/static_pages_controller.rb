@@ -8,4 +8,7 @@ class StaticPagesController < ApplicationController
   def about
     # render plain: "about text"
   end
+
+  def contact
+  end
 end
