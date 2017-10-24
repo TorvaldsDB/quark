@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UsersSignupTest" skipped="0" failures="0" errors="0" tests="2" assertions="6" time="0.12216300005093217">
-  <testcase name="test_invalid_signup_information" classname="UsersSignupTest" assertions="2" time="0.05656699975952506">
-  </testcase>
-  <testcase name="test_valid_signup_information" classname="UsersSignupTest" assertions="4" time="0.06559600029140711">
-  </testcase>
-</testsuite>
