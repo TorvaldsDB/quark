@@ -10,6 +10,9 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 gem 'bcrypt'
+gem 'faker'
+gem 'will_paginate', '>= 3.1.0'
+gem 'bootstrap-will_paginate', '>= 0.0.10'
 gem 'bootstrap-sass'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
