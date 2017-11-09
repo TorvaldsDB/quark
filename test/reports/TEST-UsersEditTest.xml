@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UsersEditTest" skipped="0" failures="0" errors="0" tests="11" assertions="30" time="0.39998599933460355">
-  <testcase name="test_should_redirect_update_when_not_logged_in" classname="UsersEditTest" assertions="2" time="0.007149999961256981">
+<testsuite name="UsersEditTest" skipped="0" failures="0" errors="0" tests="11" assertions="30" time="0.13410999986808747">
+  <testcase name="test_should_redirect_edit_when_not_logged_in" classname="UsersEditTest" assertions="2" time="0.003701999958138913">
   </testcase>
-  <testcase name="test_should_redirect_edit_when_logged_in_as_wrong_user" classname="UsersEditTest" assertions="2" time="0.04280199995264411">
+  <testcase name="test_should_redirect_update_when_logged_in_as_wrong_user" classname="UsersEditTest" assertions="2" time="0.010889000026509166">
   </testcase>
-  <testcase name="test_should_redirect_index_when_not_logged_in" classname="UsersEditTest" assertions="1" time="0.017545999959111214">
+  <testcase name="test_should_redirect_edit_when_logged_in_as_wrong_user" classname="UsersEditTest" assertions="2" time="0.013795999984722584">
   </testcase>
-  <testcase name="test_successful_edit_with_friendly_forwarding" classname="UsersEditTest" assertions="7" time="0.04666200000792742">
+  <testcase name="test_should_redirect_destroy_when_not_logged_in" classname="UsersEditTest" assertions="2" time="0.003709999960847199">
   </testcase>
-  <testcase name="test_should_redirect_destroy_when_not_logged_in" classname="UsersEditTest" assertions="2" time="0.01056299963966012">
+  <testcase name="test_successful_edit" classname="UsersEditTest" assertions="6" time="0.02459300000919029">
   </testcase>
-  <testcase name="test_should_not_allow_the_admin_attribute_to_be_edited_via_the_web" classname="UsersEditTest" assertions="2" time="0.04521099990233779">
+  <testcase name="test_unsuccessful_edit" classname="UsersEditTest" assertions="2" time="0.024271000002045184">
   </testcase>
-  <testcase name="test_should_redirect_update_when_logged_in_as_wrong_user" classname="UsersEditTest" assertions="2" time="0.03461899980902672">
+  <testcase name="test_successful_edit_with_friendly_forwarding" classname="UsersEditTest" assertions="7" time="0.01668299996526912">
   </testcase>
-  <testcase name="test_unsuccessful_edit" classname="UsersEditTest" assertions="2" time="0.0930889998562634">
+  <testcase name="test_should_redirect_index_when_not_logged_in" classname="UsersEditTest" assertions="1" time="0.0038169999606907368">
   </testcase>
-  <testcase name="test_successful_edit" classname="UsersEditTest" assertions="6" time="0.05841800011694431">
+  <testcase name="test_should_redirect_destroy_when_logged_in_as_a_non-admin" classname="UsersEditTest" assertions="2" time="0.012089000025298446">
   </testcase>
-  <testcase name="test_should_redirect_edit_when_not_logged_in" classname="UsersEditTest" assertions="2" time="0.011491999961435795">
+  <testcase name="test_should_not_allow_the_admin_attribute_to_be_edited_via_the_web" classname="UsersEditTest" assertions="2" time="0.017555000027641654">
   </testcase>
-  <testcase name="test_should_redirect_destroy_when_logged_in_as_a_non-admin" classname="UsersEditTest" assertions="2" time="0.03243400016799569">
+  <testcase name="test_should_redirect_update_when_not_logged_in" classname="UsersEditTest" assertions="2" time="0.003004999947734177">
   </testcase>
 </testsuite>

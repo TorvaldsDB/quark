@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UsersIndexTest" skipped="0" failures="0" errors="0" tests="3" assertions="95" time="0.46246100030839443">
-  <testcase name="test_index_as_admin_including_pagination_and_delete_links" classname="UsersIndexTest" assertions="62" time="0.30183500004932284">
+<testsuite name="UsersIndexTest" skipped="0" failures="0" errors="0" tests="3" assertions="95" time="0.13053499994566664">
+  <testcase name="test_index_including_pagination" classname="UsersIndexTest" assertions="32" time="0.03778699995018542">
   </testcase>
-  <testcase name="test_index_as_non-admin" classname="UsersIndexTest" assertions="1" time="0.08037499990314245">
+  <testcase name="test_index_as_admin_including_pagination_and_delete_links" classname="UsersIndexTest" assertions="62" time="0.067972999997437">
   </testcase>
-  <testcase name="test_index_including_pagination" classname="UsersIndexTest" assertions="32" time="0.08025100035592914">
+  <testcase name="test_index_as_non-admin" classname="UsersIndexTest" assertions="1" time="0.024774999998044223">
   </testcase>
 </testsuite>
