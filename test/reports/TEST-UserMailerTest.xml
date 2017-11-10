@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserMailerTest" skipped="0" failures="0" errors="0" tests="2" assertions="14" time="0.1610590000054799">
-  <testcase name="test_password_reset" classname="UserMailerTest" assertions="5" time="0.14277500001480803">
+<testsuite name="UserMailerTest" skipped="0" failures="0" errors="0" tests="2" assertions="16" time="0.011404999997466803">
+  <testcase name="test_account_activation" classname="UserMailerTest" assertions="9" time="0.00676800002111122">
   </testcase>
-  <testcase name="test_account_activation" classname="UserMailerTest" assertions="9" time="0.018283999990671873">
+  <testcase name="test_password_reset" classname="UserMailerTest" assertions="7" time="0.0046369999763555825">
   </testcase>
 </testsuite>
