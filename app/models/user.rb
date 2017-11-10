@@ -1,10 +1,8 @@
 class User < ApplicationRecord
+  has_many :microposts
   attr_accessor :remember_token, :activation_token, :reset_token
-  # before_save { self.email = email.downcase }
-  # before_save { email.downcase! }
   before_save :downcase_email
   before_create :create_activation_digest
-  # VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 
   validates :name, presence: true, length: { maximum: 50 }

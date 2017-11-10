@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SessionsHelperTest" skipped="0" failures="0" errors="0" tests="2" assertions="3" time="0.014504999970085919">
-  <testcase name="test_current_user_returns_right_user_when_session_is_nil" classname="SessionsHelperTest" assertions="2" time="0.005866999970749021">
+<testsuite name="SessionsHelperTest" skipped="0" failures="0" errors="0" tests="2" assertions="3" time="0.018815999967046082">
+  <testcase name="test_current_user_returns_nil_when_remember_digest_is_wrong" classname="SessionsHelperTest" assertions="1" time="0.011985999997705221">
   </testcase>
-  <testcase name="test_current_user_returns_nil_when_remember_digest_is_wrong" classname="SessionsHelperTest" assertions="1" time="0.008637999999336898">
+  <testcase name="test_current_user_returns_right_user_when_session_is_nil" classname="SessionsHelperTest" assertions="2" time="0.006829999969340861">
   </testcase>
 </testsuite>
