@@ -41,13 +41,7 @@ gem 'nokogiri'
 gem 'jquery-rails'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
@@ -62,7 +56,18 @@ group :development, :test do
 
   # For ruby2.0 use byebug instead of debugger
   gem 'pry-byebug', "~> 2.0.0"
+
+  gem 'rspec-rails', '~> 3.7'
+
+  gem 'factory_bot_rails'
+  gem 'database_cleaner'
+  gem 'spring-commands-rspec', '~> 1.0.2'
+
+  gem 'faker'
 end
+
+# bundle exec rake doc:rails generates the API under doc/api.
+gem 'sdoc', '~> 0.4.0',          group: :doc
 
 group :production do
   gem 'pg'
@@ -74,12 +79,20 @@ group :development do
   gem 'annotate'
 end
 
+group :development, :test do
+end
+
 group :test do
-  gem 'rails-controller-testing'
-  gem 'minitest-reporters'
-  gem 'mini_backtrace'
+  # gem 'rails-controller-testing'
+  # gem 'minitest-reporters'
+  # gem 'mini_backtrace'
   gem 'guard'
   gem 'guard-minitest'
+
+  gem "launchy", "~> 2.4.2"
+  gem "capybara", "~> 2.4.3"
+  gem 'webmock'
+  gem 'shoulda-matchers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
