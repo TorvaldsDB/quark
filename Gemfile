@@ -64,6 +64,8 @@ group :development, :test do
   gem 'spring-commands-rspec', '~> 1.0.2'
 
   gem 'faker'
+
+  gem 'growl'
 end
 
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -86,8 +88,9 @@ group :test do
   # gem 'rails-controller-testing'
   # gem 'minitest-reporters'
   # gem 'mini_backtrace'
+  # gem 'guard-minitest'
   gem 'guard'
-  gem 'guard-minitest'
+  gem 'guard-rspec'
 
   gem "launchy", "~> 2.4.2"
   gem "capybara", "~> 2.4.3"
