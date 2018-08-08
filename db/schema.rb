@@ -24,9 +24,9 @@ ActiveRecord::Schema.define(version: 20171110180019) do
     t.index ["user_id"], name: "index_microposts_on_user_id"
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
+  create_table "users", force: :cascade, comment: "Users table" do |t|
+    t.string "name", comment: "Name of user"
+    t.string "email", null: false, comment: "Email of user"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20171110180019) do
     t.string "reset_digest"
     t.datetime "reset_sent_at"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["name"], name: "index_users_on_name", unique: true, comment: "Index userd to lookup user by name"
   end
 
   add_foreign_key "microposts", "users"

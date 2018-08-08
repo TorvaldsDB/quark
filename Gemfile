@@ -70,6 +70,7 @@ group :production do
 end
 
 group :development do
+  # Add comments in front of Model
   gem 'annotate'
 end
 
