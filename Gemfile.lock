@@ -40,6 +40,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    annotate (2.7.4)
+      activerecord (>= 3.2, < 6.0)
+      rake (>= 10.4, < 13.0)
     ansi (1.5.0)
     arel (8.0.0)
     autoprefixer-rails (7.1.6)
@@ -252,6 +255,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate
   bcrypt
   bootstrap-sass
   bootstrap-will_paginate (>= 0.0.10)
@@ -288,4 +292,4 @@ DEPENDENCIES
   will_paginate (>= 3.1.0)
 
 BUNDLED WITH
-   1.15.4
+   1.16.2

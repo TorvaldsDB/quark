@@ -69,6 +69,10 @@ group :production do
   gem 'rails_12factor'
 end
 
+group :development do
+  gem 'annotate'
+end
+
 group :test do
   gem 'rails-controller-testing'
   gem 'minitest-reporters'
