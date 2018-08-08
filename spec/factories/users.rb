@@ -1,11 +1,9 @@
 FactoryBot.define do
-  sequence(:email) { |n| "person#{n}@example.com" }
   # define user's aliases author and commenter
   factory :user, aliases: [:author, :commenter] do
     # Faker::Name.name with {} is same to Faker::Name.unique.name
     name { Faker::Name.name }
-    # email { Faker::Internet.email }
-    email
+    email { Faker::Internet.email }
     password { Faker::Internet.password(10, 20, true, true) }
     admin false
 
@@ -30,8 +28,13 @@ FactoryBot.define do
   #   admin true
   # end
 
-  # You can also define like this
-  # factory :amdin, class: User do
+  # You can also define like this.
+  # This way is mot same to parent: :user.
+  # You must overwrite the attributes again
+  # factory :admin, class: User do
+  #   name { Faker::Name.name }
+  #   email { Faker::Internet.email }
+  #   password { Faker::Internet.password(10, 20, true, true) }
   #   admin true
   # end
 end
