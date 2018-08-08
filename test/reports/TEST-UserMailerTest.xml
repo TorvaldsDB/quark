@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserMailerTest" skipped="0" failures="0" errors="0" tests="2" assertions="16" time="0.022892000037245452">
-  <testcase name="test_password_reset" classname="UserMailerTest" assertions="7" time="0.006996000010985881">
-  </testcase>
-  <testcase name="test_account_activation" classname="UserMailerTest" assertions="9" time="0.01589600002625957">
-  </testcase>
-</testsuite>
