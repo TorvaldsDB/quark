@@ -68,5 +68,5 @@ guard :rspec, cmd: "bundle exec rspec" do
     Dir[File.join("**/#{m[1]}.feature")][0] || "spec/acceptance"
   end
 
-  notification :growl
+  notification :growl, sticky: true
 end
