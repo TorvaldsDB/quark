@@ -11,9 +11,9 @@ default: &default
 
 development:
   <<: *default
-  database: sample_app_development
+  database: talk_talk_development
 
 test:
   <<: *default
-  database: sample_app_test
+  database: talk_talk_test
 
