@@ -15,7 +15,7 @@ FactoryBot.define do
     factory :admin do
       admin true
 
-      factory :admin_activated, trait: [:activated]
+      factory :admin_activated, traits: [:activated]
     end
 
     factory :user_with_posts do
