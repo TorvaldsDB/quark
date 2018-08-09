@@ -7,8 +7,15 @@ FactoryBot.define do
     password { Faker::Internet.password(10, 20, true, true) }
     admin false
 
+    trait :activated do
+      activated true
+      activated_at { 21.years.ago }
+    end
+
     factory :admin do
       admin true
+
+      factory :admin_activated, trait: [:activated]
     end
 
     factory :user_with_posts do
