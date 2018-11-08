@@ -16,7 +16,7 @@ module TalkTalk
     # -- all .rb files in that directory are automatically loaded.
 
     # Add this config can affect Faker::Name.name # => "张三"
-    config.i18n.default_locale = :'zh-CN'
+    # config.i18n.default_locale = :'zh-CN'
 
     # Format time
     config.time_zone = 'Beijing'
@@ -28,6 +28,18 @@ module TalkTalk
       g.assets false
       g.helper false
       g.jbuilder false
+
+      # You can rails g model fake_model1
+      # then annotate the following 5 lines
+      # then rails g model fake_model2
+      # and then compare the two results.
+      g.test_framework :rspec,
+        # fixtures: false,
+        view_specs: false,
+        helper_specs: false,
+        routing_specs: false,
+        request_specs: false,
+        controller_specs: false
     end
 
     # Don't generate system test files.

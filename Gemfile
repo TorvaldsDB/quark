@@ -1,5 +1,5 @@
 # source 'https://rubygems.org'
-source 'https://gems.ruby-china.org'
+source 'https://gems.ruby-china.com'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -10,7 +10,6 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 gem 'bcrypt'
-gem 'faker'
 gem 'will_paginate', '>= 3.1.0'
 gem 'bootstrap-will_paginate', '>= 0.0.10'
 gem 'bootstrap-sass'
@@ -40,6 +39,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'nokogiri'
 gem 'jquery-rails'
 
+gem 'rcodetools'
+
 group :development, :test do
   gem 'selenium-webdriver'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
@@ -49,23 +50,25 @@ group :development, :test do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  gem 'pry'
+  # gem 'pry'
   # For debugger
-  gem "pry-rails", "~> 0.3.2"
-  gem 'pry-doc', "~> 0.8.0"
+  # gem "pry-rails", "~> 0.3.2"
+  # gem 'pry-doc', "~> 0.8.0"
 
   # For ruby2.0 use byebug instead of debugger
-  gem 'pry-byebug', "~> 2.0.0"
-
-  gem 'rspec-rails', '~> 3.7'
+  # gem 'pry-byebug', "~> 2.0.0"
 
   gem 'factory_bot_rails'
   gem 'database_cleaner'
   gem 'spring-commands-rspec', '~> 1.0.2'
 
   gem 'faker'
-
   gem 'growl'
+
+  # Speedup Test::Unit + RSpec + Cucumber + Spinach by running parallel on multiple CPU cores.
+  gem 'parallel_tests'
+  gem "rspec-rails"
+  gem "zeus-parallel_tests"
 end
 
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -81,9 +84,6 @@ group :development do
   gem 'annotate'
 end
 
-group :development, :test do
-end
-
 group :test do
   # gem 'rails-controller-testing'
   # gem 'minitest-reporters'
@@ -93,9 +93,12 @@ group :test do
   gem 'guard-rspec'
 
   gem "launchy", "~> 2.4.2"
-  gem "capybara", "~> 2.4.3"
   gem 'webmock'
   gem 'shoulda-matchers'
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem "rb-fsevent"
+  gem "zeus"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

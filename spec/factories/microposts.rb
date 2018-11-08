@@ -8,6 +8,8 @@ FactoryBot.define do
     # association :author, factory: :user
     # because you have used aliases in the factory user,
     # author is best.
+    # if factory user not use aliases: [:author, :commenter],
+    # then you must user association :author, factory: :user
 
     user
 
