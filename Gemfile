@@ -10,8 +10,6 @@ end
 gem 'rails', '~> 5.1.4'
 gem 'bcrypt'
 gem 'will_paginate', '>= 3.1.0'
-gem 'bootstrap-will_paginate', '>= 0.0.10'
-gem 'bootstrap-sass'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -36,12 +34,12 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'nokogiri'
-gem 'jquery-rails'
 
 gem 'rcodetools'
 
 # bootstrap https://medium.freecodecamp.org/add-bootstrap-to-your-ruby-on-rails-project-8d76d70d0e3b
-gem 'bootstrap'
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
 gem 'jquery-rails'
 
 group :development, :test do
