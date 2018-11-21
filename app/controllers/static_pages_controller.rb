@@ -12,4 +12,10 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def sample
+    # render layout: false
+    render layout: 'sample'
+    # render plain: "aaa"
+  end
 end

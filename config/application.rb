@@ -50,3 +50,5 @@ module TalkTalk
     config.autoload_paths << Rails.root.join('lib')
   end
 end
+
+SITE_NAME='来吧, 畅所欲言!'
