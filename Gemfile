@@ -57,7 +57,7 @@ group :development, :test do
   # gem 'pry-doc', "~> 0.8.0"
 
   # For ruby2.0 use byebug instead of debugger
-  # gem 'pry-byebug', "~> 2.0.0"
+  gem 'pry-byebug', "~> 2.0.0"
 
   gem 'factory_bot_rails'
   gem 'database_cleaner'
