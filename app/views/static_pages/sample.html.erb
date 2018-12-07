@@ -297,7 +297,11 @@
   <hr>
   <hr>
   Rails 的文件中获取图片需要使用 asset_path 因为图片都需要编译
-  <img src="<%= asset_path('rails.png') %>" class="img-responsive" alt="Responsive image">
+
+  <p>这个图片上有文字</p>
+  <img src="<%= asset_path('rails.png') %>" class="img-responsive" alt="Responsive image" title="This is a title">
+  <p>这个图片上也有文字, 我是一个 anchor 可以跳转</p>
+  <a href="" title="this is a title"><img src="<%= asset_path('rails.png') %>" alt=""></a>
   <img src="<%= asset_url('rails.png') %>" class="img-responsive" alt="Responsive image">
   <img src="<%= image_path('rails.png') %>" class="img-responsive" alt="Responsive image">
   <img src="<%= image_url('rails.png') %>" class="img-responsive" alt="Responsive image">
@@ -1276,6 +1280,8 @@
 
 <div class="triangle"></div>
 
+纯CSS写三角形-border法(https://www.cnblogs.com/blosaa/p/3823695.html)
+
 <!-- 向上的三角形 -->
 <div class="triangle_border_up">
     <span></span>
@@ -1296,10 +1302,16 @@
     <span></span>
 </div>
 
+<!-- 红色箭头(贝贝) -->
+<span class="red-arrow"></span>
 
-
-
-
+<!-- 纯CSS写带边框的三角形 -->
+<div class="test_triangle_border">
+    <a href="#">三角形</a>
+    <div class="popup">
+        <span><em></em></span>纯CSS写带边框的三角形
+    </div>
+</div>
 
 
 
