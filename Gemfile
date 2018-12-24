@@ -97,7 +97,6 @@ group :test do
   gem "launchy", "~> 2.4.2"
   gem 'webmock'
   gem 'shoulda-matchers'
-  gem "factory_girl_rails"
   gem "capybara"
   gem "rb-fsevent"
   gem "zeus"
