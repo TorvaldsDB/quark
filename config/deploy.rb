@@ -1,6 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.0"
 
+set :repo_url,        'git@github.com:TorvaldsDB/quark.git'
 server '47.90.57.167', port: 12020, roles: [:web, :app, :db], primary: true
 set :application, "quark"
 set :user, 'devops'
