@@ -42,6 +42,7 @@ gem 'rcodetools'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
+gem 'paranoia', "~> 2.2"
 
 group :development, :test do
   gem 'selenium-webdriver'
@@ -54,7 +55,7 @@ group :development, :test do
 
   # gem 'pry'
   # For debugger
-  # gem "pry-rails", "~> 0.3.2"
+  gem "pry-rails", "~> 0.3.2"
   # gem 'pry-doc', "~> 0.8.0"
 
   # For ruby2.0 use byebug instead of debugger
@@ -65,7 +66,11 @@ group :development, :test do
   gem 'spring-commands-rspec', '~> 1.0.2'
 
   gem 'faker'
+
+# OS X specific gems
+group :darwin do
   gem 'growl'
+end
 
   # Speedup Test::Unit + RSpec + Cucumber + Spinach by running parallel on multiple CPU cores.
   gem 'parallel_tests'
