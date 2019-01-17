@@ -13,6 +13,9 @@ require "capistrano/deploy"
 # install_plugin Capistrano::SCM::Svn
 # or
 require 'capistrano/puma'
+install_plugin Capistrano::Puma  # Default puma tasks
+# install_plugin Capistrano::Puma::Monit  # if you need the monit tasks
+install_plugin Capistrano::Puma::Nginx
 
 require 'capistrano/rails'
 
