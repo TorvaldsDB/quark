@@ -11,9 +11,9 @@ default: &default
 
 development:
   <<: *default
-  database: talk_talk_development
+  database: quark_development
 
 test:
   <<: *default
-  database: talk_talk_test
+  database: quark_test
 
