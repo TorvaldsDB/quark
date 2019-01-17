@@ -10,6 +10,8 @@
 #
 
 class Micropost < ApplicationRecord
+  acts_as_paranoid
+
   belongs_to :user
   # belongs_to :author, class_name: 'User', foreign_key: :user_id
   default_scope -> { order(created_at: :desc)  }
