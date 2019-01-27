@@ -6,6 +6,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# ruby "2.5.1"
+ruby File.read(File.expand_path('../.ruby-version', __FILE__)).chomp
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 gem 'bcrypt'
